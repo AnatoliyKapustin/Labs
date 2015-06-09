@@ -5,13 +5,13 @@ public class Point {
     public double x;
     public double y;
 
-    public Point()
+    Point()
     {
         x = 0.0;
         y = 0.0;
     }
 
-    public Point(double a, double b)
+    Point(double a, double b)
     {
         x = a;
         y = b;

@@ -27,15 +27,13 @@ public class SenderServiceImpl implements SenderService{
         for (int i = 0; i < postOffices.length; i++) {
             PostOffice p;
             if (r.nextInt(2) == 0) {
-                p = new officeOne(addr1,);
-            } else {
-                p = new officeTwo(r.nextInt(50) + 20, r.nextInt(20) + 5, r.nextInt(8) + 1);
+
             }
-            postOffices[i] = p;
+
         }
         return  postOffices;
     }
-    }
+
 
     @Override
     public Transit[] calculatePossibleTransits(com.logistic.api.model.post.Package parcel, PostOffice senderOffice) {
