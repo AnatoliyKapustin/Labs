@@ -23,10 +23,7 @@ public class BaseOffice implements PostOffice {
         this.coordinates = p1;
     }
 
-    public void setOfficeCity(String city){
-        officeAddr.city = city;
-    }
-    @Override
+   @Override
     public Stamp getStamp() {
         return officeStamp;
     }
@@ -65,6 +62,7 @@ public class BaseOffice implements PostOffice {
     public Point getGeolocation() {
         return this.coordinates;
     }
+
     public final void moveTo(Point point) {
         this.coordinates = point;
     }

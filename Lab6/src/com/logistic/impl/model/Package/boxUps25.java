@@ -8,7 +8,7 @@ import com.logistic.api.model.post.PackageType;
  * Created by AnatoliyKapustin on 01.06.2015.
  */
 public class boxUps25 extends BasePackage {
-    public boxUps25(String id, int weight, PackageType Type, Address receiverAddress, Address senderAddress, FullName senderFullName, FullName receiverFullName) {
+    public boxUps25(String id, int weight, PackageType Type, PackageAddressImpl receiverAddress, PackageAddressImpl senderAddress, PackageFullNameImpl senderFullName, PackageFullNameImpl receiverFullName) {
         super(id, weight, Type, receiverAddress, senderAddress, senderFullName, receiverFullName);
     }
 }
